@@ -71,6 +71,11 @@ public class BaseTest {
 
     }
 
+    public double getFormattedAmount(String amount){
+        double price = Double.parseDouble(amount.substring(1));
+        return price;
+    }
+
     @AfterClass
     public void tearDown(){
         driver.quit();
